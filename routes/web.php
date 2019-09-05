@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CadastroCategoriaProdutosController@categoriaDeProdutos');
+Route::get('/cliente', 'ContadoController@index');
+Route::get('/produto', 'VendasController@vendas');
