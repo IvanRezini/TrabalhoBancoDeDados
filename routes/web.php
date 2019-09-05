@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'CadastroCategoriaProdutosController@categoriaDeProdutos');
-Route::get('/cliente', 'ContadoController@index');
-Route::get('/produto', 'VendasController@vendas');
+Route::get('/categoria', 'CadastroCategoriaProdutosController@categoriaDeProdutos');
+Route::get('/cliente', 'CadastroClienteController@cadastroCliente');
+Route::get('/produto', 'CadastroNovosProdutosController@cadastroNovosProdutos');
