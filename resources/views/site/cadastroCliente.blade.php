@@ -5,6 +5,7 @@
 @stop
 
 @section('conteudo')
+<div class="container">
 <form class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">Cadastro de cliente</h1>
     <div>
@@ -44,8 +45,11 @@
         </div>
 
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Salvar</button>
 </form>
+</div>
+
+
 @stop
 
 @section('textoRodape')
