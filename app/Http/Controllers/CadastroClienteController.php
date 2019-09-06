@@ -9,6 +9,6 @@ class CadastroClienteController extends Controller
     public function cadastroCliente() {
         $titulo = "Cadastro";
         $rodape = date('Y') . ' Todos os direitos reservados.';
-        return view('site.cadastoCliente', compact('titulo', 'rodape'));
+        return view('site.cadastroCliente', compact('titulo', 'rodape'));
     }
 }

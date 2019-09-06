@@ -9,6 +9,6 @@ class CadastroCategoriaProdutosController extends Controller
     public function categoriaDeProdutos() {
         $titulo = "Categoria";
         $rodape = date('Y') . ' Todos os direitos reservados.';
-        return view('site.cadastroCategoria', compact('titulo', 'rodape'));
+        return view('site.cadastroCategorias', compact('titulo', 'rodape'));
     }
 }
