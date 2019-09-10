@@ -10,12 +10,14 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <form action="{{route('categoria.store')}}" method="post">
-            @csrf
-            <label for="nomcat">Nome da categoria</label><br/>
-            <input type="text" name="nomcat" id="nomcat"/><br/><br/>
-            <button type="submit">Adicionar</button>
-        </form>
+        <div style="background-color: #4dc0b5">
+            <form action="{{route('categoria.store')}}" method="post">
+                @csrf
+                <label for="nomcat">Nome da categoria</label><br/>
+                <input type="text" name="nomcat" id="nomcat"/><br/><br/>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
     </body>
 </html>
 
