@@ -18,14 +18,14 @@
                 <input type="text" name="descricao" class="form-control" required minlength="6"
             </div>
             <div class="form-group">
-                <h2>Descriçao </h2>
-                <input type="text" name="descricao" class="form-control" required minlength="6"
+                <h2>Valor </h2>
+                <input type="number" name="valor" class="form-control" required minlength="6"
             </div>
 
         </div>
         <h2>Categoria </h2>
         <select class="custom-select" id="inputGroupSelect01">
-            <option selected>Choose...</option>
+            <option selected>Seleçao</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>

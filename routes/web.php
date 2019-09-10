@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Comentadas Mudança para Route resource
+//Route::get('/categoria', 'CadastroCategoriaProdutosController@categoriaDeProdutos');
+//Route::get('/cliente', 'CadastroClienteController@cadastroCliente');
+//Route::get('/produto', 'CadastroNovosProdutosController@cadastroNovosProdutos');
+Route::get('/', function (){
+    return view('welcome');
+});
 
-Route::get('/categoria', 'CadastroCategoriaProdutosController@categoriaDeProdutos');
-Route::get('/cliente', 'CadastroClienteController@cadastroCliente');
-Route::get('/produto', 'CadastroNovosProdutosController@cadastroNovosProdutos');
+Route::resource('categoria', 'CategoriaController');
