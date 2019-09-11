@@ -13,7 +13,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        //
+          $cliente = \App\Cliente::get();
+        return view('cliente.index', compact('cliente'));
     }
 
     /**
