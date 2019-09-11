@@ -39,7 +39,7 @@
                         <td>{{$c->codcat}}</td>
                         <td>{{$c->nomcat}}</td>
                         <td>
-                            <button onclick="">Editar</button>
+                            <button onclick="location.href='{{route('categoria.edit', $c->codcat)}}'" type="button">Editar</button>
                             <form action="{{route('categoria.destroy', $c->codcat)}}" method="post">
                                 @csrf
                                 @method('DELETE')

@@ -32,7 +32,7 @@ class CategoriaController extends Controller {
 
     public function edit($codcat) {
         $categoria = \App\Categoria::find($codcat);
-        return view('categoria.edit', compact($categoria));
+        return view('categoria.edit', compact('categoria'));
     }
 
     public function update(Request $request, $codcat) {

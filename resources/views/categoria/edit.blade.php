@@ -19,7 +19,7 @@
                 @method('patch')
                 
                 <label for="nomcat">Nome da categoria</label><br/>
-                <input type="text" name="nomcat" id="nomcat" value="{{$categoria->codcat}}"/><br/><br/>
+                <input type="text" name="nomcat" id="nomcat" value="{{$categoria->nomcat}}"/><br/><br/>
                 <button type="submit">Editar</button>
             </form>
         </div>
