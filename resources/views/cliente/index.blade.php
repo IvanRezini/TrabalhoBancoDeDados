@@ -10,20 +10,20 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-         <!--<script>
+         <script>
 
             window.onload = function () {
             @if (session()->get('msg'))
                     alert('{{session()->get('msg')}}');
             @endif
             };
-        </script>-->
+        </script>
 
     </head>
     <body>
         <div style="background-color: #4dc0b5">
-            <!--  <a href="{{route('categoria.create')}}">Adicionar Categoria</a><br/><br/> -->
-            <!-- Listagem de cateorias -->
+             <a href="{{route('cliente.create')}}">Adicionar Cliente</a><br/><br/>
+            <!-- Listagem de clientes -->
             <table style="width: 50%"  border="1">
                 <thead style="text-align: center">
                     <tr>
@@ -54,13 +54,13 @@
                         <td>{{$c->telcli}}</td>
                   
                         <td>teste
-                          <!--  <button onclick="location.href='{{route('categoria.edit', $c->codcat)}}'" type="button">Editar</button>
+                           <button onclick="location.href='{{route('categoria.edit', $c->codcat)}}'" type="button">Editar</button>
                             <form action="{{route('categoria.destroy', $c->codcat)}}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit">Excluir</button>
                                     
-                            </form>-->
+                            </form>
                         </td>
                         
                     </tr>
